@@ -1,0 +1,16 @@
+name: Super-Linter
+
+on: push
+
+jobs:
+  super-lint:
+    name: Lint code base
+    runs-on: ubutnu-latest
+    steps:
+      - name: Set up Node.js 16
+        uses: actions/setup-node@v3
+      - name: Set up Node.js 16
+        uses: actions/setup-node@v3
+        env: 
+          DEFAULT_BRANCH: main
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
